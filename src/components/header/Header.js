@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVideoSlash } from "@fortawesome/free-solid-svg-icons/faVideoSlash";
-import {Button} from "react-bootstrap";
-import { Container } from "react-bootstrap";
-import { Nav } from "react-bootstrap";
-import { Navbar } from "react-bootstrap";
+import { faVideoSlash } from "@fortawesome/free-solid-svg-icons";
+import { Button } from "bootstrap";
+import { Container } from "react-bootstrap/Container";
+import { Nav } from "react-bootstrap/Nav";
+import { Navbar } from "react-bootstrap/Navbar";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
@@ -24,7 +24,7 @@ const Header = () => {
                 <NavLink className="nav-link" to="/watchlist">Watch List</NavLink>
                 </Nav>
                 <Button variant="outline-info" className="me-2">Login</Button>
-                <Button variant="outline-info" className="me-2">Register</Button>
+                <Button variant="outline-info">Register</Button>
             </Navbar.Collapse>
         </Container>
     </Navbar>
